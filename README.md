@@ -20,7 +20,7 @@ Prueba técnica: [justin-A18 - Desarrollo de una aplicación de busqueda de usua
 
 ## Correr el proyecto en local
 
-### 1. Clonar el repositorio
+**1. Clonar el repositorio**
 
 - Forma 1, usando HTTPS:
 
@@ -38,13 +38,13 @@ o tambien puedes descargar el archivo zip
 ![Captura de pantalla 2024-03-23 103530](https://github.com/jaenfigueroa/github-search-ts/assets/69079292/d336387d-8bb4-4b15-95d8-d291ce4af36f)
 
 
-### 2. Instalar las dependencias
+**2. Instalar las dependencias**
 
 ```bash
 pnpm install
 
 ```
-### 3. Correr el proyecto
+**3. Correr el proyecto**
 
 ```bash
 pnpm run dev
