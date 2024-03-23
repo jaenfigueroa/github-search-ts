@@ -15,12 +15,12 @@ Prueba técnica: [justin-A18 - Desarrollo de una aplicación de busqueda de usua
 
 ### 1. Clonar el repositorio
 
-- Forma 1:
+- Forma 1, usando HTTPS:
 
 ```bash
 git clone https://github.com/jaenfigueroa/github-search-ts.git
 ```
-- Forma 2:
+- Forma 2, usando SSH:
 
 ```bash
 gh repo clone git@github.com:jaenfigueroa/github-search-ts.git
