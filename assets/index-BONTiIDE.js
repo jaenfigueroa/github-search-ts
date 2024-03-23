@@ -17,4 +17,4 @@
         </li>
       </ul>
     </a>
-      `;n+=i}),y.innerHTML=n},b=o=>{f.src=o.image,m.textContent=o.name||"",u.textContent=`@${o.userName}`||"",p.textContent=o.description||"No hay descripción disponible",g.textContent=String(o.followers)||"0",h.textContent=String(o.following)||"0",$.textContent=o.location||"No disponible"},d=async o=>{const n=await I(o),t=await E(o);n.exist?(b(n),B(t)):(c.showModal(),w.addEventListener("click",()=>c.close()))};l.addEventListener("search",()=>d(l.value));d("github");
+      `;n+=i}),y.innerHTML=n},b=o=>{f.src=o.image,m.textContent=o.name||"",u.textContent=`@${o.userName}`||"",p.textContent=o.description||"No hay descripción disponible",g.textContent=String(o.followers)||"0",h.textContent=String(o.following)||"0",$.textContent=o.location||"No disponible"},d=async o=>{const n=await I(o),t=await E(o);n.exist?(b(n),B(t)):(c.showModal(),w.addEventListener("click",()=>c.close()))};l.addEventListener("search",()=>l.value&&d(l.value));d("github");
