@@ -17,6 +17,6 @@ export const searchUser = async (userName: string) => {
   }
 }
 
-$searchUser.addEventListener('search', () => searchUser($searchUser.value))
+$searchUser.addEventListener('search', () => $searchUser.value && searchUser($searchUser.value))
 
 searchUser('github')
