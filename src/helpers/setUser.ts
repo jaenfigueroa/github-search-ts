@@ -1,10 +1,10 @@
-import { $profileDescription, $profileFollowers, $profileFollowing, $profileImg, $profileLocation, $profileName } from "../utils/elements"
+import { $profileDescription, $profileFollowers, $profileFollowing, $profileImg, $profileLocation, $profileName, $profileUsername } from "../utils/elements"
 import User from "../types/user"
 
 export const setUser = (user: User) => {
   $profileImg.src = user.image
-  $profileName.textContent = user.name || 'Este usuario no existe'
-  $profileName.href = user.url || '#'
+  $profileName.textContent = user.name || ''
+  $profileUsername.textContent = `@${user.userName}`  || ''
   $profileDescription.textContent = user.description || 'No hay descripción disponible'
   $profileFollowers.textContent = String(user.followers) || '0'
   $profileFollowing.textContent = String(user.following) || '0'

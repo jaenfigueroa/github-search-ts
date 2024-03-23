@@ -6,7 +6,9 @@ export const getUser = async (username: string):Promise<User> => {
   const data = await response.json()
 
   return {
+    exist: response.status === 200,
     name: data.name,
+    userName: data.login,
     description: data.bio,
     followers: data.followers,
     following: data.following,

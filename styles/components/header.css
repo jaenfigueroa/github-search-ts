@@ -1,0 +1,47 @@
+.header {
+  height: 150px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/github-bg.webp'), url('./github-bg.webp');
+  background-color: #0d1116;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  background-position-x: 100px;
+  padding: 1rem;
+
+  @media (width > 800px) {
+    height: 220px;
+    background-position-x: 300px;
+  }
+
+  .search {
+    padding: 1rem;
+    border-radius: var(--rounded-sm);
+    background: var(--bg-primary);
+    display: flex;
+    gap: 1rem;
+    color: var(--text-secondary);
+    width: 100%;
+
+    @media (width > 768px) {
+      padding: 1.2rem;
+      width: 50%;
+      min-width: 500px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      background: none;
+      width: 100%;
+
+      &::placeholder {
+        color: var(--text-primary);
+      }
+    }
+  }
+}

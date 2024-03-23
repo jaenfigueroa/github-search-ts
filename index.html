@@ -20,7 +20,6 @@
   </header>
 
   <main class="main">
-    <div class="container">
       <section class="banner">
         <img src="" alt="" class="avatar-profile" id="profile-img" >
 
@@ -35,22 +34,24 @@
           </p>
           <p class="item">
             <span>Ubicación</span>
-            <span id="profile-location">No disponible</span>
+            <span id="profile-location"></span>
           </p>
         </div>
       </section>
 
       <div class="data-user">
-        <a href="" class="user" id="profile-name"  id="profile-link" target="_blank" title="Ver perfil en github">No existe</a>
-        <p class="description" id="profile-description">No tiene descripción</p>
+        <a href="" class="user" id="profile-name"  id="profile-link" target="_blank" title="Ver perfil en github"></a>
+        <p class="userName" id="profile-username" ></p>
+        <p class="description" id="profile-description"></p>
       </div>
 
       <div class="card-container" id="card-container"></div>
-    </div>
   </main>
 
-  <footer>
-  </footer>
+  <dialog id="modal" class="modal">
+      <button id="close-dialog" class="close-modal">&times;</button>
+      <p>Ups, Este usuario no existe</p>
+  </dialog>
 </body>
 
 </html>
