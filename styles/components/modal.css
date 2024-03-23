@@ -1,6 +1,7 @@
 .modal {
   border: none;
   margin: auto;
+  overflow: visible;
 
   &[open]::backdrop {
     animation: backdrop-fade-in 0.3s ease-out forwards;
@@ -9,9 +10,25 @@
   div {
     border-radius: var(--rounded-sm);
     background: red;
-    padding: 2rem;
-    padding-top: 3rem;
+    padding: 2.5rem;
+    padding-top: 3.5rem;
     background: var(--bg-primary);
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background-image: url('/favicon.png'), url('./favicon.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: translateY(-70px) translateX(0px) rotateY(180deg);
+    }
 
     .close-modal {
       all: initial;
