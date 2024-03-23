@@ -1,0 +1,51 @@
+name: Desplegar proyecto Github Search
+
+on:
+  push:
+    tags:
+      - 'dev_*'
+
+permissions: write-all
+
+jobs:
+  build:
+    environment: dev
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: seleccionar al version de nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Instalar pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      # - name: Establecer variable GITHUB_ACTIONS
+      #   run: echo "GITHUB_ACTIONS=true" >> $GITHUB_ENV
+
+      - name: Instalar dependencias y construir el dist
+        working-directory: ./src
+        run: |
+          pnpm install
+          pnpm run build
+
+      - name: Desplegar en GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -d dist -u "github-actions-bot <support+actions@github.com>"
+
+      # - name: Desplegar en GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: dist
