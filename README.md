@@ -52,4 +52,4 @@ pnpm run dev
 
 ## Link del despliegue
 
-https://jaenfigueroa.github.io/github-search/
+https://jaenfigueroa.github.io/github-search-ts/
