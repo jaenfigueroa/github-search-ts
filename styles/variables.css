@@ -1,0 +1,18 @@
+:root{
+  --bg-primary: #20293A;
+  --bg-secondary: #111629;
+
+  --text-primary: white;
+  --text-secondary: #677e92;
+  --text-tertiary: #7E8999;
+
+  --text-size-sm: 0.875rem;
+  --text-size-md: 1rem;
+  --text-size-lg: 1.2rem;
+  --text-size-xlg: 1.5rem;
+
+  --rounded-sm: 0.5rem;
+  --rounded-md: 1rem;
+
+  --bg-card: linear-gradient(90deg, #12182e, #1A1943);
+}
