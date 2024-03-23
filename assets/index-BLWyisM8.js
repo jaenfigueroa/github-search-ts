@@ -3,15 +3,15 @@
       <h3>${o.name}</h3>
       <p>${o.description}</p>
       <ul>
-        <li>
+        <li title="Licencia">
           <i class="fa-regular fa-id-badge"></i>
           ${o.license}
         </li>
-        <li>
+        <li title="Forks">
           <i class="fa-solid fa-code-fork"></i>
           ${o.forks}
         </li>
-        <li>
+        <li title="Estrellas">
           <i class="fa-regular fa-star"></i>
           ${o.stars}
         </li>
