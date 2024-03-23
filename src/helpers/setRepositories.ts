@@ -10,15 +10,15 @@ export const setRespositories = (repositories: Repository[]) => {
       <h3>${repository.name}</h3>
       <p>${repository.description}</p>
       <ul>
-        <li>
+        <li title="Licencia">
           <i class="fa-regular fa-id-badge"></i>
           ${repository.license}
         </li>
-        <li>
+        <li title="Forks">
           <i class="fa-solid fa-code-fork"></i>
           ${repository.forks}
         </li>
-        <li>
+        <li title="Estrellas">
           <i class="fa-regular fa-star"></i>
           ${repository.stars}
         </li>
