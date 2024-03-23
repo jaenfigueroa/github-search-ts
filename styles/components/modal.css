@@ -32,6 +32,11 @@
 
     p {
       text-align: center;
+      font-size: var(--text-size-md);
+
+      @media (width > 720px) {
+        font-size: var(--text-size-lg);
+      }
     }
 
     .close-modal {
