@@ -1,0 +1,36 @@
+.footer{
+  background: #0D1116;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 250px;
+  background-image: url('./github-bg.webp'), url('/github-bg.webp');
+  background-position: center start;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  p{
+    background: #0D1116;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    text-align: center;
+    box-shadow: 
+    0px 0px 10px 10px rgb(13, 17, 22), 
+    0px 0px 10px 25px rgba(13, 17, 22, 0.5),
+    0px 0px 10px 35px rgba(13, 17, 22, 0.3),
+    0px 0px 10px 40px rgba(13, 17, 22, 0.2);
+
+    a{
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+
+      &:hover{
+        color: #96CFAC;
+      }
+    }
+  }
+}

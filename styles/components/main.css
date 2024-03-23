@@ -8,6 +8,13 @@
   gap: 2.5rem;
   padding-inline: 1rem;
 
+  min-height: calc(100vh - 150px);
+
+  @media (width > 800px) {
+    min-height: calc(100vh - 220px);
+  }
+
+
   .banner {
     display: flex;
     flex-direction: column;

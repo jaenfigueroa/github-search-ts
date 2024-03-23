@@ -3,9 +3,11 @@
 
 @import './components/header.css';
 @import './components/main.css';
+@import './components/footer.css';
 @import './components/modal.css';
 
 body {
   background: var(--bg-primary);
+  position: relative;
 }
 
