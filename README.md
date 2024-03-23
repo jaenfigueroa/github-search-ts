@@ -11,6 +11,37 @@ Prueba técnica: [justin-A18 - Desarrollo de una aplicación de busqueda de usua
 - CSS
 - TypeScript
 
+## Correr el proyecto en local
+
+1. Clonar el repositorio
+
+- Forma 1:
+
+```bash
+git clone https://github.com/jaenfigueroa/github-search-ts.git
+```
+- Forma 2:
+
+```bash
+gh repo clone git@github.com:jaenfigueroa/github-search-ts.git
+
+```
+o tambien puedes descargar el archivo zip
+
+
+2. Instalar las dependencias
+
+```bash
+pnpm install
+
+```
+3. Correr el proyecto
+
+```bash
+pnpm run dev
+
+```
+
 ## Link del despliegue
 
 https://jaenfigueroa.github.io/github-search/
