@@ -8,7 +8,7 @@ Prueba técnica: [justin-A18 - Desarrollo de una aplicación de busqueda de usua
 
 - HTML
 - CSS
-- JavaScript
+- TypeScript
 
 ## Link del despliegue
 
