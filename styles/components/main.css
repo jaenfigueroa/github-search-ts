@@ -9,6 +9,7 @@
   padding-inline: 1rem;
 
   min-height: calc(100vh - 150px);
+  padding-bottom: 2rem;
 
   @media (width > 800px) {
     min-height: calc(100vh - 220px);
