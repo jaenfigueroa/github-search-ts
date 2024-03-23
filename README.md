@@ -5,15 +5,17 @@ Prueba técnica: [justin-A18 - Desarrollo de una aplicación de busqueda de usua
 ![image](https://github.com/jaenfigueroa/github-search-ts/assets/69079292/05d60a8f-277b-45dd-9b5e-9ced04add1db)
 ![image](https://github.com/jaenfigueroa/github-search-ts/assets/69079292/83e34aef-0a69-45de-bff2-79c717381ea9)
 
-## Tecnologías utilizadas:
+## Lenguages usados:
 
 - HTML
 - CSS
 - TypeScript
 
-## API utilizada
+![](https://skillicons.dev/icons?i=html,css,typescript)
 
-- [API de Github](https://docs.github.com/en/rest)
+## API 
+
+- [Documentación de la API de Github](https://docs.github.com/en/rest)
 
 ## Correr el proyecto en local
 
