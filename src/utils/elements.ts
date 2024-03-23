@@ -12,3 +12,6 @@ export const $cardContainer = document.getElementById('card-container') as HTMLD
 
 export const $dialog = document.getElementById('modal') as HTMLDialogElement
 export const $closeDialog = document.getElementById('close-dialog') as HTMLButtonElement
+
+export const $buttonSearch = document.getElementById('button-search') as HTMLButtonElement
+export const $buttonRandom = document.getElementById('button-random') as HTMLButtonElement

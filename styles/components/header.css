@@ -43,5 +43,22 @@
         color: var(--text-primary);
       }
     }
+
+    button{
+      all: unset;
+      cursor: pointer;
+      
+      &:hover i{
+        transition: 0.3s;
+        color: rgba(255, 255, 255, 0.474);
+      }
+
+      &:last-child:hover i{
+        transition: 1s;
+        color: rgba(255, 255, 255, 0.474);
+        transition: 0.3s;
+        transform: rotateZ(360deg);
+      }
+    }
   }
 }
